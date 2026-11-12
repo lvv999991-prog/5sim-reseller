@@ -1,0 +1,6 @@
+# Next.js generates immutable files under /_next/static/* that don't change
+# between builds. Match Next.js' default cache behaviour for them so the
+# browser can cache them without a revalidation request.
+# See https://opennext.js.org/cloudflare/caching#static-assets-caching
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
